@@ -67,7 +67,7 @@
 }
 
 /*移动条*/
-.slider{
+.slider1{
   width: 686px;
   height: auto;
   font-size: 0px;
@@ -76,14 +76,31 @@
   top:423px;
   animation: slidermove 3s infinite linear;
 }
+.slider2{
+  width: 686px;
+  height: auto;
+  font-size: 0px;
+  position: absolute;
+  left:0px;
+  top:423px;
+  animation: slidermove2 3s infinite linear;
+
+
+}
 .slider img{
   display: inline-block;
 }
 
 @keyframes slidermove {
-  0%{left: 0}
+  0%{left: 0px}
   100%{left: -343px;}
 }
+
+@keyframes slidermove2 {
+  0%{left: 343px}
+  100%{left: 0px;}
+}
+
 /*鸟*/
 #flybird{
   display: none;
@@ -93,7 +110,7 @@
   height: 30px;
   left: 50px;
   top:200px;
-  background: url(bird0.png) no-repeat;
+  background: url(up_bird0.png) no-repeat;
 }
 @keyframes flybird_up {
   0%{background:url(up_bird0.png) no-repeat; }
@@ -189,14 +206,16 @@
 .gameover .overMessage .thisScore{
   position: absolute;
   right:30px;top: 35px;
-  font-size: 2.5em;
+  font-size: 2em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color:#fff;
 }
 .gameover .overMessage .historyScore{
   position:absolute;
   right: 30px;top: 85px;
   font-size: 2em;
-  color: red;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(255, 255, 255);
   font-weight: 100;
 }
 
